@@ -4,3 +4,19 @@
 // Import the basic utilities that other components in your project will require that
 // don’t change. For example, color palettes, global variables, mixins, etc.
 //
+
+//Font families
+$default--font--family: 'Dosis', sans-serif;
+$header--font--family: 'Rock Salt', cursive;
+
+//Font Weights
+$regular--weight: 400px;
+$bold--weight: 700px;
+
+//Color palettes
+$primary--background--color: rgb(219, 235, 235);
+$secondary--background--color: rgb(172, 211, 180);
+$primary--accent--color: rgb(77, 83, 117);
+$secondary--accent--color: rgb(110, 9, 11);
+$primary--font--color: darkgrey;
+$secondary-font--color: rgb(166, 10, 47);
