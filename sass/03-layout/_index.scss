@@ -5,3 +5,28 @@
 // <main>, <footer>, and BEM classes.
 // example.
 //
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background: linear-gradient(180deg, rgba(238,238,238,1) 27%, rgba(219,235,235,1) 81%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $secondary-font--color;
+}
+
+header {
+  padding-top: 1rem;
+  background-color: transparent;
+  font-family: $default--font--family;
+  font-size: $default--font-size;
+}
