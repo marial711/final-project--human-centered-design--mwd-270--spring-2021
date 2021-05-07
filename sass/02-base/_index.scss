@@ -9,3 +9,25 @@
 //
 @import 'reset';
 @import 'body';
+nav {
+  background: linear-gradient(180deg, rgba(77,83,117,1) 33%, rgba(55,61,85,1) 68%, rgba(5,12,12,1) 100%);
+  box-shadow: 0 0 1rem $primary--accent--color;
+  display: flex;
+  flex-direction: column;
+  max-height: 75vh;
+  height: 75vh;
+  width: 15vw;
+  border-radius: 30px;
+  justify-content: space-around;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  text-align: center;
+  > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $primary--font--color;
+    font-size: 1.6rem;
+  }
+
+  @include slide;
+}
