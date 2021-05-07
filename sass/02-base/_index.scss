@@ -9,6 +9,7 @@
 //
 @import 'reset';
 @import 'body';
+
 nav {
   background: linear-gradient(180deg, rgba(77,83,117,1) 33%, rgba(55,61,85,1) 68%, rgba(5,12,12,1) 100%);
   box-shadow: 0 0 1rem $primary--accent--color;
@@ -30,4 +31,60 @@ nav {
   }
 
   @include slide;
+}
+
+form {
+    > p {
+      font-family: $header--font--family;
+    }
+  > input {
+    background-color: $secondary--background--color;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-color: $secondary--accent--color;
+    margin: 0.62rem;
+    padding: 0.26rem;
+  }
+  > input:focus {
+    outline: none;
+  }
+}
+
+button:not(#reset) {
+  border: none;
+  font-family: $header--font--family;
+  font-size: 1.2rem;
+  position: relative;
+  left: 50px;
+  margin-right: 50px;
+  border-radius: 15px;
+  padding-left: 0.6rem;
+  padding-right:0.6rem;
+}
+
+button:hover{
+    background-color: white;
+}
+
+button:focus{
+  outline: none;
+  background-color: white
+}
+
+#reset {
+  border-radius: 15px;
+  font-family: $header--font--family;
+  font-size: 1.2rem;
+  position: relative;
+  left: 50px;
+  border: 1px;
+  background-color: inherit;
+}
+
+#reset:hover {
+    background-color: darken($secondary--background--color, 20%);
+  }
+#reset:focus {
+    background-color: darken($secondary--background--color, 20%);
 }
