@@ -20,3 +20,12 @@ $primary--accent--color: rgb(77, 83, 117);
 $secondary--accent--color: rgb(110, 9, 11);
 $primary--font--color: darkgrey;
 $secondary-font--color: rgb(166, 10, 47);
+@mixin slide {
+  animation-name: nav-slide;
+  animation-duration: 2s;
+  animation-play-state: running;
+  @keyframes nav-slide {
+    0% {height: 0vh;}
+    100% {height: 75vh;}
+  }
+}
