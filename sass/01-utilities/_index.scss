@@ -5,6 +5,16 @@
 // don’t change. For example, color palettes, global variables, mixins, etc.
 //
 
+
+//phone and tablet Responsive
+$breakpoint--tablet: 1100px;
+$breakpoint--phone:  840px;
+
+$width--tablet: 768px;
+$width--phone: 91.42%;
+
+$breakpoint--laptop: 1440px;
+
 //Font families
 $default--font--family: 'Dosis', sans-serif;
 $header--font--family: 'DM Serif Text', serif;
@@ -33,6 +43,6 @@ $secondary-font--color: rgb(116, 6, 32);
   animation-play-state: running;
   @keyframes nav-slide {
     0% {height: 0vh;}
-    100% {height: 75vh;}
+    100% {height: 82vh;}
   }
 }
