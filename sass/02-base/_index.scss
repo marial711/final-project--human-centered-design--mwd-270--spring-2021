@@ -173,8 +173,16 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
 
-  @media (max-width: $breakpoint--phone) {
+.intro {
+  padding: 8rem;
+  color: $primary--background--color;
+  line-height: 4rem;
+  p {
+    font-size: 3rem;
+  }
+
     justify-content: center;
     flex-wrap: wrap;
   @media (max-width: $breakpoint--tablet){
