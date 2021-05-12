@@ -56,6 +56,9 @@ nav {
     width: 100%;
     height: 20px;
     margin-bottom: 1rem;
+@media (max-width: $breakpoint--tablet){
+  max-width: 100%;
+    margin: 0;
   }
 }
 
@@ -84,6 +87,9 @@ form {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  @media (max-width: $breakpoint--phone){
+      margin: 4rem;
+    }
 }
 
 button:not(#reset) {
@@ -110,6 +116,10 @@ button:focus{
   font-size: 1.2rem;
   border: 1px;
   background-color: inherit;
+  @media (max-width: $breakpoint--phone){
+    width: 325px;
+    height: 80px
+    }
 }
 
 #reset:hover {
@@ -130,11 +140,17 @@ img {
   width: 50px;
   height: 50px;
   padding: 1rem;
+  @media (max-width: $breakpoint--tablet){
+    padding: 3rem;
+    }
 }
 
 textarea {
   font-family: $default--font--family;
   font-size: $default--font-size;
+  @media (max-width: $breakpoint--tablet){
+      padding: 2rem;
+    }
 }
 
 .mask {
@@ -145,12 +161,33 @@ textarea {
   @media (max-width: $breakpoint--phone) {
     justify-content: center;
     flex-wrap: wrap;
+  @media (max-width: $breakpoint--tablet){
+    p {
+      font-size: 2rem;
+    }
+    }
+  @media (max-width: $breakpoint--phone){
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    p {
+      font-size: 2rem;
+    }
   }
 }
 
 .side-panel {
   text-align: center;
   padding: 2rem;
+  @media (max-width: $breakpoint--tablet){
+    padding-top: 4rem;
+    }
+    @media (max-width: $breakpoint--phone){
+      padding-top: 2rem;
+      padding-right: 2rem;
+      }
+}
 #my-art {
   margin-top: 1rem;
   margin-bottom: 6rem;
