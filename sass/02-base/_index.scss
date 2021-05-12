@@ -151,4 +151,24 @@ textarea {
 .side-panel {
   text-align: center;
   padding: 2rem;
+#my-art {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  img {
+    margin: 1rem;
+    box-shadow: 0 3px 3px black;
+    height: 300px;
+    width: 200px;
+    border: 3px solid black;
+  }
+  img:hover{
+    height: 303px;
+    width: 203px;
+    border: 3px solid black;
+  }
+}
 }
