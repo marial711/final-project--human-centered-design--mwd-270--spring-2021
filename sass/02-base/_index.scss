@@ -156,6 +156,14 @@ img {
 textarea {
   font-family: $default--font--family;
   font-size: $default--font-size;
+.contact {
+  color: white;
+  padding: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   @media (max-width: $breakpoint--tablet){
       padding: 2rem;
     }
