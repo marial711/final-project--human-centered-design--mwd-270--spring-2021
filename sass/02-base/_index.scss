@@ -57,6 +57,15 @@ nav {
     text-shadow: 2px 2px $primary--font--color;
   }
 }
+
+div {
+  max-height: 100%;
+  color: $primary--font--color;
+  font-size: 1.4rem;
+  font-family: $default--font--family;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
 @media (max-width: $breakpoint--tablet){
   max-width: 100%;
     margin: 0;
@@ -64,30 +73,30 @@ nav {
 }
 
 form {
-  border-radius: 30px;
-  background-color: $secondary--background--color;
-    > p {
-      font-family: $header--font--family;
-    }
   > input {
-    background-color: $secondary--background--color;
+    font-family: $default--font--family;
+    color: $primary--font--color;
+    margin: 1rem;
+    background-color: inherit;
+    border-color: #031943;
+    width: 300px;
     border-left: none;
     border-right: none;
     border-top: none;
-    border-color: $secondary--accent--color;
-    margin: 1rem;
-    padding: 0.26rem;
-    font-family: $default--font--family;
-    font-size: 1rem;
   }
-  > input:focus {
+
+  > input:focus{
     outline: none;
   }
-  @media (max-width: $breakpoint--phone) {
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+
+  > p {
+    font-family: $header--font--family;
+    > span {
+      color: white;
+      font-size: 1rem;
+    }
   }
+
   @media (max-width: $breakpoint--phone){
       margin: 4rem;
     }
@@ -124,38 +133,36 @@ button:focus {
   color: white;
 }
 
+textarea {
+  color: $primary--font--color;
+  font-family: $default--font--family;
+  background-color: $bright--color;
+  border: none;
+  width: 400px;
+  height: 80px;
   @media (max-width: $breakpoint--phone){
     width: 325px;
     height: 80px
     }
 }
 
-#reset:hover {
-    background-color: darken($secondary--background--color, 20%);
-  }
-#reset:focus {
-    background-color: darken($secondary--background--color, 20%);
+textarea:focus {
+  outline: none;
 }
 
-p {
-  font-family: $default--font--family;
-  font-size: $default--font-size;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+img:not(#logo) {
+  width: 70px;
+  height: 70px;
 }
 
-img {
-  width: 50px;
-  height: 50px;
-  padding: 1rem;
+.about {
+  padding: 6rem;
+  line-height: 2rem;
   @media (max-width: $breakpoint--tablet){
     padding: 3rem;
     }
 }
 
-textarea {
-  font-family: $default--font--family;
-  font-size: $default--font-size;
 .contact {
   color: white;
   padding: 4rem;
@@ -169,9 +176,10 @@ textarea {
     }
 }
 
-.mask {
+.display{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -183,8 +191,6 @@ textarea {
     font-size: 3rem;
   }
 
-    justify-content: center;
-    flex-wrap: wrap;
   @media (max-width: $breakpoint--tablet){
     p {
       font-size: 2rem;
@@ -202,8 +208,8 @@ textarea {
 }
 
 .side-panel {
+  color: white;
   text-align: center;
-  padding: 2rem;
   @media (max-width: $breakpoint--tablet){
     padding-top: 4rem;
     }
@@ -212,6 +218,7 @@ textarea {
       padding-right: 2rem;
       }
 }
+
 #my-art {
   margin-top: 1rem;
   margin-bottom: 6rem;
@@ -232,4 +239,7 @@ textarea {
     border: 3px solid black;
   }
 }
+
+#reset {
+  background-color: inherit;
 }
