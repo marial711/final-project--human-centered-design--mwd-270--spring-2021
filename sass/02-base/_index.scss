@@ -93,30 +93,37 @@ form {
     }
 }
 
-button:not(#reset) {
+::placeholder {
+  color: #000;
+  font-weight:  bold;
+  font-size: 1rem;
+}
+
+button {
+  background-color: $bright--color;
+  color: $primary--font--color;
+  cursor: pointer;
+  font-family: $header--font--family;
   border: none;
-  font-family: $header--font--family;
+  border-radius: 20px;
   font-size: 1.2rem;
-  border-radius: 15px;
-  padding-left: 0.6rem;
-  padding-right:0.6rem;
+  margin-left: 3rem;
+  position: relative;
+  left: 10%;
+  padding: 0.6rem;
 }
 
-button:hover{
-    background-color: white;
+button:hover {
+  box-shadow: 3px 3px 3px black;
+  color: white;
 }
 
-button:focus{
+button:focus {
   outline: none;
-  background-color: white
+  box-shadow: 3px 3px 3px black;
+  color: white;
 }
 
-#reset {
-  border-radius: 15px;
-  font-family: $header--font--family;
-  font-size: 1.2rem;
-  border: 1px;
-  background-color: inherit;
   @media (max-width: $breakpoint--phone){
     width: 325px;
     height: 80px
